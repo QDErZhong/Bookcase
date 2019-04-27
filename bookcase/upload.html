@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>上传图书 - 网信书柜</title>
+</head>
+<body>
+<h1>上传图书</h1>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+<b>请上传 EPUB 格式文件，文件不要超过 10MB</b><br/><br/>
+图书文件:<input type="file" name="file" />
+<input type="submit" name="type"/>
+</form>
+<br/>
+<a href="./">返回目录</a>
+
+<script>
+if(navigator.userAgent.indexOf('LRX22G') != -1){
+    document.querySelector('form').innerHTML='三星平板还上传你马的书呢？？';
+}
+</script>
+</body>
+</html>
